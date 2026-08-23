@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christopher Alvarez — Projects Portfolio">
+    <title>Projects | Christopher Alvarez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">CA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title fade-in">Projects</h1>
+                <p class="section-subtitle fade-in">A collection of my engineering work.</p>
+
+                <div class="card-grid card-grid-2">
+
+                    <!-- Project 1: 8-Bit CPU -->
+                    <div class="project-card fade-in">
+                        <div class="project-header" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">8-Bit Single-Cycle CPU</h3>
+                            <div class="project-tags">
+                                <span class="tag">Verilog</span>
+                                <span class="tag">AMD Vivado</span>
+                                <span class="tag">FPGA</span>
+                                <span class="tag">RTL Design</span>
+                            </div>
+                            <p class="project-desc">Designed and verified a complete 8-bit single-cycle processor from scratch. Features a custom 12-instruction ISA with R/I/J-type encoding, full datapath (ALU, register file, decoder, instruction/data memory), and comprehensive testbench suite. All 4 test programs pass behavioral simulation in AMD Vivado.</p>
+                            <a href="#" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Autonomous Drone -->
+                    <div class="project-card fade-in">
+                        <div class="project-header" style="background: linear-gradient(135deg, #11998e, #38ef7d);"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">Autonomous Drone System</h3>
+                            <div class="project-tags">
+                                <span class="tag">ROS 2</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">PX4</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                            <p class="project-desc">Developed an autonomous drone navigation system using ROS 2 and PX4 flight controller. Implements waypoint navigation, obstacle avoidance, and real-time telemetry monitoring. Built with modular architecture for sensor integration and mission planning.</p>
+                            <a href="#" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Coming Soon -->
+                    <div class="project-card fade-in">
+                        <div class="project-header" style="background: linear-gradient(135deg, #bdc3c7, #95a5a6);"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">More Projects Coming Soon</h3>
+                            <div class="project-tags">
+                                <span class="tag">Embedded Systems</span>
+                                <span class="tag">Robotics</span>
+                            </div>
+                            <p class="project-desc">Currently working on new projects in embedded systems and robotics. Stay tuned for updates as I continue building and exploring new technologies.</p>
+                            <p style="font-style: italic; color: var(--text-secondary); font-size: 14px;">In progress</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Christopher Alvarez</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
