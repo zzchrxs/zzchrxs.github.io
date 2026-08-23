@@ -1,46 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="Christopher Alvarez — Mechatronics Engineering Portfolio">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    span.s1 {text-decoration: underline ; font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    span.s3 {font-kerning: none}
-    span.s4 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s5 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
-    ul.ul1 {list-style-type: disc}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christopher Alvarez — Mechatronics Engineering Portfolio">
+    <title>Christopher Alvarez | Mechatronics Engineering</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<p class="p1"><span class="s1"><a href="file:///Users/chrisalvarez/Desktop/portfolio/index.html">CA</a></span></p>
-<ul class="ul1">
-  <li class="li1"><span class="s2"><a href="file:///Users/chrisalvarez/Desktop/portfolio/index.html"><span class="s1">Home</span></a></span></li>
-  <li class="li1"><span class="s2"><a href="file:///Users/chrisalvarez/Desktop/portfolio/projects.html"><span class="s1">Projects</span></a></span></li>
-  <li class="li1"><span class="s2"><a href="file:///Users/chrisalvarez/Desktop/portfolio/about.html"><span class="s1">About</span></a></span></li>
-  <li class="li1"><span class="s2"><a href="file:///Users/chrisalvarez/Desktop/portfolio/contact.html"><span class="s1">Contact</span></a></span></li>
-</ul>
-<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s3"><b>Christopher Alvarez</b></span></h1>
-<p class="p3"><span class="s3">Robotics Engineering</span></p>
-<p class="p3"><span class="s3">Building intelligent systems at the intersection of hardware and software.</span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/chrisalvarez/Desktop/portfolio/projects.html">View Projects</a></span><span class="s4"> <a href="file:///Users/chrisalvarez/Desktop/portfolio/assets/resume.pdf"><span class="s5">Download Resume</span></a></span></p>
-<p class="p4"><span class="s3">🔧</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s3"><b>Hardware Design</b></span></h3>
-<p class="p3"><span class="s3">FPGA design, digital logic, and custom processor architectures.</span></p>
-<p class="p4"><span class="s3">🤖</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s3"><b>Robotics &amp; Autonomy</b></span></h3>
-<p class="p3"><span class="s3">ROS 2, drone systems, and autonomous navigation.</span></p>
-<p class="p4"><span class="s3">💻</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s3"><b>Software Development</b></span></h3>
-<p class="p3"><span class="s3">Python, C/C++, embedded firmware, and system programming.</span></p>
-<p class="p3"><span class="s3">© 2026 Christopher Alvarez</span></p>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">CA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <h1 class="hero-name">Christopher Alvarez</h1>
+                <p class="hero-title">Mechatronics Engineering</p>
+                <p class="hero-tagline">Building intelligent systems at the intersection of hardware and software.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="assets/resume.pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <span class="card-icon">🔧</span>
+                        <h3 class="card-title">Hardware Design</h3>
+                        <p class="card-text">FPGA design, digital logic, and custom processor architectures.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <span class="card-icon">🤖</span>
+                        <h3 class="card-title">Robotics & Autonomy</h3>
+                        <p class="card-text">ROS 2, drone systems, and autonomous navigation.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <span class="card-icon">💻</span>
+                        <h3 class="card-title">Software Development</h3>
+                        <p class="card-text">Python, C/C++, embedded firmware, and system programming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Christopher Alvarez</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
