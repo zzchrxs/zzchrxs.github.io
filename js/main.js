@@ -51,3 +51,30 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeElements.forEach(el => el.classList.add('visible'));
     }
 });
+
+// Image Modal Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById("imageModal");
+    if (!modal) return;
+    
+    const modalImg = document.getElementById("expandedImg");
+    const closeBtn = document.querySelector(".close-modal");
+    const galleryImages = document.querySelectorAll(".project-gallery img");
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('show');
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('show');
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+        }
+    });
+});
