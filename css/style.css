@@ -31,7 +31,12 @@ body {
     font-size: 17px;
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-primary);
+    background-color: var(--bg-primary);
+    background-image: 
+        linear-gradient(rgba(210, 210, 215, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(210, 210, 215, 0.4) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center top;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -159,7 +164,7 @@ main {
 }
 
 .section-alt {
-    background: var(--bg-secondary);
+    background: transparent;
 }
 
 .container {
