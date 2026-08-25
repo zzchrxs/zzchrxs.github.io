@@ -653,3 +653,58 @@ main {
 .close-modal:hover {
     color: #bbb;
 }
+
+/* ========== FULL WIDTH PROJECT ROWS ========== */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: var(--bg-primary);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.project-row:hover {
+    box-shadow: var(--card-shadow-hover);
+    border-color: transparent;
+}
+
+.project-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-row .project-content {
+    flex: 1;
+}
+
+.project-row .project-gallery {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.project-row .project-gallery img {
+    height: 180px;
+}
+
+@media (max-width: 900px) {
+    .project-row, .project-row:nth-child(even) {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+    .project-row .project-gallery img {
+        height: 140px;
+    }
+}
